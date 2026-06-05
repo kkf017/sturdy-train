@@ -1,0 +1,5 @@
+﻿uuid,nr_proj,pdf_name,station_name,station_code,connection_line,connection_type,grid_operator,voltage_kv,connection_line_type,cable_length_km,municipality,terna_approval,comment
+6aebc79a-6f70-4b85-8a43-8b26f0878665,8021,8021_A_13a-STUDIO_DI_IMPATTO_AMBIENTALE.pdf,stazione elettrica (se) di smistamento a 150 ,,"rtn a 150 kv ""aliano - senise""",in antenna,rtn,150,MT/AT,4.0,sant'arcangelo,True,
+a5b7369b-7eb8-458a-a13b-5314cfb3bc74,8021,8021_06_RP-Relazione_Tecnico_Paesaggistica_signed_signed_signed.pdf,stazione elettrica (se) di smistamento a 150 ,,"rtn a 150 kv ""aliano - senise""",in antenna,rtn,150,MT/AT,4.0,melfi,True,
+d43f25ab-4a5d-4d42-995f-9b48ecbbab13,8021,8021_A_1-RELAZIONE_GENERALE.pdf,stazione elettrica (se) di smistamento a 150 ,,"rtn a 150 kv ""aliano - senise""",in antenna,rtn,150,MT/AT,4.0,sant'arcangelo,True,
+cf783d76-764f-4ef9-8dd2-db94c6f95d66,8021,8021_A_11-DISCIPLINARE_DESCRITTIVO_PRESTAZIONALE_DEGLI_ELEMENTI_TECNICI.pdf,stazione elettrica (se) di smistamento a 150 ,,"rtn a 150 kv ""aliano - senise""",in antenna,rtn,150,MT/AT,4.0,sant'arcangelo
