@@ -1,0 +1,6 @@
+voltage_kv,substation_code,substation_name,connection_type,connection_municipality,stmg_accepted,validation_issues,is_valid,file_name,text_length
+1.0,,A ED APPARECCHIATURE,,di Lombardore,,,True,8018_01_R01_Rel_tecn_illustr.pdf,53065
+1.0,,A ED APPARECCHIATURE,,di Lombardore,,,True,8018_01_R01_Relaz_tecn.pdf,71563
+,,,,FOGLIO,,missing_substation_name,False,8018_01_T08_Piano_part.pdf,3141
+5.0,,a AT/MT LEINI,,Lombardore ed in parte nel comune di San,,,True,8018_03_R04_Rel_prev_campi_EM.pdf,31631
+5.0,,,,di Lombardore,,missing_substation_name,False,8018_Parere_n_69_Plenaria_PNIEC_del_17_10_22_-_ID_VIP_7380.pdf,150198

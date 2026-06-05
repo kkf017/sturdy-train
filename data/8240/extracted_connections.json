@@ -1,0 +1,62 @@
+[
+  {
+    "voltage_kv":1.0,
+    "substation_code":null,
+    "substation_name":"A ED APPARECCHIATURE",
+    "connection_type":null,
+    "connection_municipality":"di Lombardore",
+    "stmg_accepted":null,
+    "validation_issues":"",
+    "is_valid":true,
+    "file_name":"8018_01_R01_Rel_tecn_illustr.pdf",
+    "text_length":53065
+  },
+  {
+    "voltage_kv":1.0,
+    "substation_code":null,
+    "substation_name":"A ED APPARECCHIATURE",
+    "connection_type":null,
+    "connection_municipality":"di Lombardore",
+    "stmg_accepted":null,
+    "validation_issues":"",
+    "is_valid":true,
+    "file_name":"8018_01_R01_Relaz_tecn.pdf",
+    "text_length":71563
+  },
+  {
+    "voltage_kv":null,
+    "substation_code":null,
+    "substation_name":null,
+    "connection_type":null,
+    "connection_municipality":"FOGLIO",
+    "stmg_accepted":null,
+    "validation_issues":"missing_substation_name",
+    "is_valid":false,
+    "file_name":"8018_01_T08_Piano_part.pdf",
+    "text_length":3141
+  },
+  {
+    "voltage_kv":5.0,
+    "substation_code":null,
+    "substation_name":"a AT\/MT LEINI",
+    "connection_type":null,
+    "connection_municipality":"Lombardore ed in parte nel comune di San",
+    "stmg_accepted":null,
+    "validation_issues":"",
+    "is_valid":true,
+    "file_name":"8018_03_R04_Rel_prev_campi_EM.pdf",
+    "text_length":31631
+  },
+  {
+    "voltage_kv":5.0,
+    "substation_code":null,
+    "substation_name":null,
+    "connection_type":null,
+    "connection_municipality":"di Lombardore",
+    "stmg_accepted":null,
+    "validation_issues":"missing_substation_name",
+    "is_valid":false,
+    "file_name":"8018_Parere_n_69_Plenaria_PNIEC_del_17_10_22_-_ID_VIP_7380.pdf",
+    "text_length":150198
+  }
+]

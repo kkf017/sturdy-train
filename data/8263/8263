@@ -1,0 +1,58 @@
+
+Chunk totali elaborati: 705
+Chunk rilevanti: 507
+Chunk estraibili: 93
+
+Top 10 chunk estraibili:
+
+File: 8263_TSTXIB1_VIncASSE_signed.pdf
+Pagine: 5-6
+Score: 0.702, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8263_APR01_VIncA_SSE_signed.pdf
+Pagine: 5-6
+Score: 0.702, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8263_APR01_SIA_E.pdf
+Pagine: 13-14
+Score: 0.664, Estraibile: True
+Tensione: at, Operatore: None, POD: None
+
+File: 8263_2025-09-25_Modulo_lista_controllo_val_prel_TSTXB1_signed.pdf
+Pagine: 2-3
+Score: 0.628, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8263_2025-09-25_Modulo_lista_controllo_val_prel_TSTXB1_signed.pdf
+Pagine: 1-2
+Score: 0.620, Estraibile: True
+Tensione: None, Operatore: terna, POD: None
+
+---------------------------------
+
+File: 8263_m_amte_CTVA_REGISTRO_UFFICIALE_I_0007114_27-09-2022.pdf
+Pagine: 24-25
+Score: 0.588, Estraibile: True
+Tensione: media tensione, Operatore: None, POD: None
+
+File: 8263_Relazione_Apricena01.pdf
+Pagine: 8-9
+Score: 0.579, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8263_m_amte_CTVA_REGISTRO_UFFICIALE_I_0007114_27-09-2022.pdf
+Pagine: 23-24
+Score: 0.575, Estraibile: True
+Tensione: media tensione, Operatore: None, POD: None
+
+File: 8263_APR01_L.pdf
+Pagine: 12-13
+Score: 0.574, Estraibile: True
+Tensione: bt, Operatore: None, POD: None
+
+File: 8263_TSTXIB1_F_Relazioneoperearchitettoniche_signed.pdf
+Pagine: 2-3
+Score: 0.573, Estraibile: True
+Tensione: at, Operatore: terna, POD: None

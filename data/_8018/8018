@@ -1,0 +1,57 @@
+
+Chunk totali elaborati: 793
+Chunk rilevanti: 539
+Chunk estraibili: 66
+
+Top 10 chunk estraibili:
+
+File: 8018_Parere_n_69_Plenaria_PNIEC_del_17_10_22_-_ID_VIP_7380.pdf
+Pagine: 39-40
+Score: 0.681, Estraibile: True
+Tensione: media tensione, Operatore: terna, POD: None
+
+File: 8018_01_R01_Rel_tecn_illustr.pdf
+Pagine: 5-6
+Score: 0.648, Estraibile: True
+Tensione: mt, Operatore: e-distribuzione, POD: None
+
+File: 8018_01_R01_Relaz_tecn.pdf
+Pagine: 5-6
+Score: 0.648, Estraibile: True
+Tensione: mt, Operatore: e-distribuzione, POD: None
+
+File: 8018_Parere_n_69_Plenaria_PNIEC_del_17_10_22_-_ID_VIP_7380.pdf
+Pagine: 7-8
+Score: 0.641, Estraibile: True
+Tensione: mt, Operatore: e-distribuzione, POD: None
+
+File: 8018_Parere_n_69_Plenaria_PNIEC_del_17_10_22_-_ID_VIP_7380.pdf
+Pagine: 6-7
+Score: 0.626, Estraibile: True
+Tensione: mt, Operatore: e-distribuzione, POD: None
+
+File: 8018_03_R04_Rel_prev_campi_EM.pdf
+Pagine: 11-12
+Score: 0.609, Estraibile: True
+Tensione: at, Operatore: terna, POD: None
+
+File: 8018_01_T08_Piano_part.pdf
+Pagine: 2-3
+Score: 0.577, Estraibile: True
+Tensione: mt, Operatore: None, POD: None
+
+File: 8018_01_R01_Rel_tecn_illustr.pdf
+Pagine: 7-8
+Score: 0.574, Estraibile: True
+Tensione: bassa tensione, Operatore: e-distribuzione, POD: None
+
+File: 8018_01_R01_Relaz_tecn.pdf
+Pagine: 7-8
+Score: 0.574, Estraibile: True
+Tensione: bassa tensione, Operatore: e-distribuzione, POD: None
+
+File: 8018_03_R05_VINCA.pdf
+Pagine: 16-17
+Score: 0.568, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+Salvati 793 chunk su output

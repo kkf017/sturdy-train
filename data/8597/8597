@@ -1,0 +1,57 @@
+
+Chunk totali elaborati: 1399
+Chunk rilevanti: 1178
+Chunk estraibili: 344
+
+Top 10 chunk estraibili:
+
+File: 8597_Parere_n_517_Plenaria_n_93_del_5_12_24_ID_8263.pdf
+Pagine: 51-52
+Score: 0.694, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8597_RDS-04_PDU_FV-SSE.pdf
+Pagine: 6-7
+Score: 0.676, Estraibile: True
+Tensione: at, Operatore: None, POD: None
+
+File: 8597_Parere_n_517_Plenaria_n_93_del_5_12_24_ID_8263.pdf
+Pagine: 30-31
+Score: 0.676, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8597_RDS-04_Relazione_Preliminare_sulla_Gestione_delle_Terre_e_Rocce_di_Scavo-signed-signed.pdf
+Pagine: 6-7
+Score: 0.676, Estraibile: True
+Tensione: at, Operatore: None, POD: None
+
+File: 8597_MASE_VA_DEC_2025-0000004.pdf
+Pagine: 5-6
+Score: 0.672, Estraibile: True
+Tensione: mt, Operatore: None, POD: None
+
+File: 8597_Parere_n_517_Plenaria_n_93_del_5_12_24_ID_8263.pdf
+Pagine: 75-76
+Score: 0.672, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8597_Parere_n_517_Plenaria_n_93_del_5_12_24_ID_8263.pdf
+Pagine: 6-7
+Score: 0.668, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8597_Parere_n_517_Plenaria_n_93_del_5_12_24_ID_8263.pdf
+Pagine: 50-51
+Score: 0.663, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8597_Parere_n_517_Plenaria_n_93_del_5_12_24_ID_8263.pdf
+Pagine: 69-70
+Score: 0.662, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8597_RDS-10_Viarch_Sottostazione-signed.pdf
+Pagine: 4-5
+Score: 0.661, Estraibile: True
+Tensione: at, Operatore: terna, POD: None
+Salvati 1399 chunk su output/10_8597

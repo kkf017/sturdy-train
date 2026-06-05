@@ -1,0 +1,56 @@
+
+Chunk totali elaborati: 1968
+Chunk rilevanti: 1627
+Chunk estraibili: 252
+
+Top 10 chunk estraibili:
+
+File: 8375_48405B-signed.pdf
+Pagine: 3-4
+Score: 0.719, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8375_REL06_00_Relazione_impianti_elettrici_e_linea_elettrica_signed-signed.pdf
+Pagine: 6-7
+Score: 0.694, Estraibile: True
+Tensione: bassa tensione, Operatore: terna, POD: None
+
+File: 8375_48441A-signed_signed.pdf
+Pagine: 9-10
+Score: 0.681, Estraibile: True
+Tensione: at, Operatore: terna, POD: None
+
+File: 8375_48441A_egDante-signed.pdf
+Pagine: 9-10
+Score: 0.681, Estraibile: True
+Tensione: at, Operatore: terna, POD: None
+
+File: 8375_48441A_egDante-signed.pdf
+Pagine: 1-2
+Score: 0.676, Estraibile: True
+Tensione: None, Operatore: terna, POD: None
+
+File: 8375_48401A-signed_signed.pdf
+Pagine: 1-2
+Score: 0.669, Estraibile: True
+Tensione: None, Operatore: terna, POD: None
+
+File: 8375_FBA-PV-CV-DRW-47.pdf
+Pagine: 3-4
+Score: 0.662, Estraibile: True
+Tensione: media tensione, Operatore: terna, POD: None
+
+File: 8375_FBA-PV-FF-STD-23.pdf
+Pagine: 5-6
+Score: 0.661, Estraibile: True
+Tensione: at, Operatore: terna, POD: None
+
+File: 8375_48405A-signed_signed.pdf
+Pagine: 3-4
+Score: 0.661, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8375_REL16_00_Piano_di_dismissione_e_ripristino_signed-signed.pdf
+Pagine: 5-6
+Score: 0.644, Estraibile: True
+Tensione: media tensione, Operatore: terna, POD: None

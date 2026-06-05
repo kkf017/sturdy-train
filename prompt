@@ -1,0 +1,26 @@
+Je dois traiter un document en italien concernant les énergies renouvelables (photovoltaique) et la distribution de l'électricté en Italie. En utilisant Python, comment extraire les informations relatives au raccordement électrique suivantes dans ce document ci-dessous ?
+
+substation_name, substation_code, voltage_kv, cable_length_km, connection_municipality, terna_approved, stmg_accepted, shared_connection	False	Correct	"in capo ad altro produttore capofila" hints at shared SE, but not explicit enough
+ 
+ 
+ 
+ I am using Python and I have to work with a large corpus of italian documents. More specifically I am working with italian documents about photovoltaic parks and I have to extract the following informations about electrical connection (in table). What is the best way to extract the expected informations from the following document ?
+ 
+ 
+ 
+ 
+substation_name, substation_code, voltage_kv, connection_type, cable_length_km, connection_municipality, terna_approved, stmg_accepted, shared_connection			
+
+
+
+|Field	Value	| Correct |	Issue|
+| ------------- |------------- |:-------------:|
+| substation_name	| "linea RTN"	| Wrong	Should be "Caltagirone" (the SE RTN 150/36 kV Caltagirone) |
+| substation_code	| "202201619"	| Correct	 |
+|voltage_kv	| 36	| Debatable	"in antenna a 36 kV" matches, but the SE is 150/36 kV. The connection cable is at 36 kV, the RTN side is 150 kV. Depends on your semantic intent.|
+|connection_type |	"RTN"	| Correct	| 
+|cable_length_km |	None	| Missing	The length is 17,980 m (~17.98 km) but appears only in a table as 17980 not in prose|
+|connection_municipality	| None	| Missing	"ubicata nel Comune di Caltagirone (CT)" isn't caught|
+|terna_approved	| True	| Correct	R1 has "benestariata" — but only because I added it in my test. Your current code does NOT have that pattern.|
+|stmg_accepted	| False	| Correct	No acceptance mentioned|
+|shared_connection |	False |	Correct	"in capo ad altro produttore capofila" |hints at shared SE, but not explicit enough|

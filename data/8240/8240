@@ -1,0 +1,57 @@
+
+Chunk totali elaborati: 1203
+Chunk rilevanti: 958
+Chunk estraibili: 287
+
+Top 10 chunk estraibili:
+
+File: 8240_AS245-ET08-R_Relazione_tecnica_descrittiva_opere_RTN.pdf
+Pagine: 18-19
+Score: 0.725, Estraibile: True
+Tensione: None, Operatore: terna, POD: None
+
+File: 8240_parere_n_383_id_vip_7610_plenaria_pnr-pniec.pdf
+Pagine: 41-42
+Score: 0.666, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8240_parere_n_383_id_vip_7610_plenaria_pnr-pniec.pdf
+Pagine: 50-51
+Score: 0.662, Estraibile: True
+Tensione: mt, Operatore: None, POD: None
+
+File: 8240_RDS-10_Viarch_Bufala.pdf
+Pagine: 10-11
+Score: 0.662, Estraibile: True
+Tensione: bt, Operatore: terna, POD: None
+
+File: 8240_parere_n_383_id_vip_7610_plenaria_pnr-pniec.pdf
+Pagine: 40-41
+Score: 0.662, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8240_parere_n_383_id_vip_7610_plenaria_pnr-pniec.pdf
+Pagine: 39-40
+Score: 0.661, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8240_RDS-10_Viarch_Sottostazione.pdf
+Pagine: 4-5
+Score: 0.661, Estraibile: True
+Tensione: at, Operatore: terna, POD: None
+
+File: 8240_parere_n_383_id_vip_7610_plenaria_pnr-pniec.pdf
+Pagine: 5-6
+Score: 0.661, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8240_parere_n_383_id_vip_7610_plenaria_pnr-pniec.pdf
+Pagine: 49-50
+Score: 0.657, Estraibile: True
+Tensione: mt, Operatore: terna, POD: None
+
+File: 8240_RDA-01_Studio_di_Impatto_Ambientale.pdf
+Pagine: 199-200
+Score: 0.651, Estraibile: True
+Tensione: media tensione, Operatore: terna, POD: None
+Salvati 1203 chunk su output
