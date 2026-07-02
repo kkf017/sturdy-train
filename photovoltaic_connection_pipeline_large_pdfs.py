@@ -4,6 +4,7 @@
 from typing import List, Dict, Any, Tuple
 import re
 import os
+import sys
 import json
 import numpy as np
 import pandas as pd
@@ -263,15 +264,28 @@ def save_results(results: List[Dict], output_dir: str) -> None:
 
     print(f"Salvati {len(results)} chunk su {out_path}")
 
+def save_part_results(results: List[Dict], output_dir: str) -> None:
+    out_path = Path(output_dir)
+    out_path.mkdir(parents=True, exist_ok=True)
+
+    df = pd.DataFrame(results)
+    df.to_csv(out_path / "partial_results.csv", index=False)
+
+    json_path = out_path / "partial_results.json"
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+
+    print(f"Salvati {len(results)} chunk su {out_path}")
+
 
 def main():
-    pdf_dir = "data/pdfs"
-    pdf_dir = (
-    	"/home/kathleen/90_DATA_PREPROCESS/italy_poc"
-    	"/italy_poc/output/documents"
-    	"/8610"
-    )
-    output_dir = "output/10_8610"
+    pdf_dir = sys.argv[1]
+    #(
+    #	"/home/kathleen/90_DATA_PREPROCESS/italy_poc"
+    #	"/italy_poc/output/documents"
+    #	"/8133"
+    #)
+    output_dir = sys.argv[2] #"data/_8133"
 
     pdf_files = list(Path(pdf_dir).glob("*.pdf"))
     if not pdf_files:
@@ -294,6 +308,8 @@ def main():
             print(f"Pagine: {r['start_page']}-{r['end_page']}")
             print(f"Score: {r['semantic_score']:.3f}, Estraibile: {r['extractable']}")
             print(f"Tensione: {r.get('voltage_value')}, Operatore: {r.get('operator_name')}, POD: {r.get('pod_code')}")
+        save_part_results(extractable_results[:10], output_dir)
+       
 
     save_results(results, output_dir)
 
