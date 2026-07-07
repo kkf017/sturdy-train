@@ -72,54 +72,6 @@ def read_large_pdf_pymupdf(pdf_path, max_pages=None, return_pages=False):
 
 #########################################################################
 #
-
-def _extract_connection_line(txt):	
-	patterns = [
-		[
-		    {"TEXT": {"IN": ["rtn", "rtte"]}, "OP": "+"},
-		    {"TEXT": {"IN": ["a"]}, "OP": "*"},
-		    {"LIKE_NUM": True, "OP": "+"},
-		    {"TEXT": {"IN": ["kv"]}, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "+"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"TEXT": {"IN": ['-']}, "OP": "+"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"IS_PUNCT": True, "OP": "*"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "+"}
-		],
-		[
-		    {"TEXT": {"IN": ['"']}, "OP": "+"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"TEXT": {"IN": ['-']}, "OP": "+"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "+"}
-		],
-		[
-		    {"TEXT": {"IN": ["SE", "se"]}, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "?"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "?"},	    
-		    {"TEXT": {"IN": ['-']}, "OP": "+"},
-		    {"TEXT": {"IN": ["SE", "se"]}, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "?"},
-		    {"IS_ASCII": True, "OP": "+"},
-		    {"TEXT": {"IN": ['"']}, "OP": "?"},
-		],
-		
-		# rtn 6/180/380kV Bisaccia-Deliceto
-	]
-
-	nlp_doc = nlp(txt)
-	
-	matcher = Matcher(nlp.vocab)
-	matcher.add("extract_connection_line", patterns)
-	matches = matcher(nlp_doc)
-	
-	for match_id, start, end in matches:
-		print(f"\t\033[33m{nlp.vocab.strings[match_id]}\033[0m, {nlp_doc[start:end]}")
-
-
 def extract_connection_line(text: str) -> str:
     """
     Extracts the substation name from various Italian phrasing:
@@ -127,7 +79,6 @@ def extract_connection_line(text: str) -> str:
     - "SE RTN 150/36 kV Caltagirone" -> 'Caltagirone'
     - "cabina primaria AT/MT LEINI" -> 'LEINI'
     """
-    
     patterns = [
     	r'linea\s+(?:(?:RTN|MT|AT)\s+)?(?:a\s+\d+\s*kV\s+)?(?:esistente\s+)?(["“\']+[A-Za-zÀ-ÖØ-öø-ÿ\s]+[\-–—]+[A-Za-zÀ-ÖØ-öø-ÿ\s]+["“\']+)',
   	
@@ -165,11 +116,70 @@ def extract_connection_line(text: str) -> str:
             for match in re.finditer(pattern, clean_text, re.IGNORECASE | re.VERBOSE):
                 print(f"\t\033[35mMatch\033[0m: {match.group()!r}")
                 print(f"\t\033[33mPosition\033[0m: {match.start()}–{match.end()}")
+                return match.group()!r
         except:
             pass
     return None
 
 
+
+def extract_station_name(text: str) -> str:
+    """
+    Extracts the substation name from various Italian phrasing:
+    - "Stazione Elettrica (SE) di smistamento" -> 'smistamento'
+    - "SE RTN 150/36 kV Caltagirone" -> 'Caltagirone'
+    - "cabina primaria AT/MT LEINI" -> 'LEINI'
+    """
+    patterns = [
+    	r'stazione di [“"][^”"]+[”"]',
+    	
+    	r'(?i:rtn) denominata [“"][^”"]+[”"]',
+
+    	r'(?i:rtn)\s+\d+/\d+\s*kV\s*(?:di\s+)?[“"][^”"]+[”"]',
+    	
+    	r'(?i:rtn)\s+\d+/\d+\s*kV\s*(?:denominata\s+)?[“"][^”"]+[”"]',
+    	
+    	r'SE\s+(?i:rtn)\s+di\s+[A-Za-zÀ-ÿ\s]+',
+    	
+    	r'RTN\s*TERNA\s*di\s*([A-Z][a-zA-Z]*(?:\s+[A-Z][a-zA-Z]*)*)',    	
+    	
+    	r'SE\s+Terna\s*[0-9]+/[0-9]+\s*kV\s*["\'«“]\s*([A-Za-zÀ-ÖØ-öø-ÿ\s\-0-9]+?)\s*["\'»”]',
+    	
+        r'SE\s+Terna\s*["\'«“]\s*([A-Za-zÀ-ÖØ-öø-ÿ\s\-0-9]+?)\s*["\'»”]',
+        
+        r'Cabina Primaria \(CP\)\s*(\d+)\s*kV\s*denominata\s*[""“”](.+?)[""“”]',
+        
+        r'cabina\s+primaria\s+\(CP\)\s+\d+/\d+\s*kV\s+denominata\s+[“"][^”"]+[”"]',
+        
+        r'SET\s+[“"][^”"]+[”"]\s+\d+/\d+kV',
+        
+        r'SE\s+\d+/\d+\s*kV\s+di\s+Terna\s+denominata\s+[“"][^”"]+[”"]',
+        
+        r'Stazione\s*(\d+)/(\d+)\s*kV\s*(esistente|in progetto)?\s*denominata\s*[""“”](.+?)[""“”]',
+  	
+  	r'stazione di smistamento a \d+(?:[.,]\d+)?\s*kV denominata "[^"]+"',
+  	
+  	 r'stazione\s*\(SE\)\s*di\s*smistamento\s*della\s*RTN\s*a\s*(\d+)\s*kV',
+  	
+  	r'stazione\s+esistente\s+a\s+\d+/\d+\s*kV\s*[“"][^”"]+[”"]',
+  	
+  	r'stazione\s+di\s+rete\s+\d+/\d+\s*kV\s+di\s+[A-Za-zÀ-ÿ\s]+',
+  	
+  	r'(?:S\.E\.|Stazione elettrica RTN|stazione elettrica)\s*["\u201c\u201d]?([^"\u201c\u201d\n]+)["\u201c\u201d]?',
+    ]
+    
+    for pattern in patterns:
+        try:
+            clean_text = re.sub(r'\s+', ' ', text)
+            for pattern in patterns:
+                match = re.search(pattern, clean_text, re.IGNORECASE)
+                if match:
+                    print(f"\t\033[35mMatch\033[0m: {match.group()!r}")
+                    print(f"\t\033[33mPosition\033[0m: {match.start()}–{match.end()}")
+                    return match.group(0).strip()[:45]
+        except:
+            pass
+    return None
 #########################################################################
 #
 EXPRESSIONS = [
@@ -194,14 +204,24 @@ def main():
 	frame = read_xlsx(filename)
 	print(f"Shape: {frame.shape}")
 	
-	for i, row in frame.iterrows():
-		print(f"({i}) {row['nr_proj']}: \n\t{row['connection_line']}")
+	#for i, row in frame.iterrows():
+	for i in range(94,frame.shape[0]):
+		row = frame.loc[i, :]
+		print(f"\n({i}) {row['nr_proj']}:")
 		try:
-			txt = clean_txt(row['connection_line'])
-			extract_connection_line(txt)
+
+			print(f" \t{row['connection_line']}")
+			extract_connection_line(
+				clean_txt(row['connection_line'])
+			)
+			print(f" \n\t{row['station_name']}")
+			extract_station_name(
+				clean_txt(row['station_name'])
+			)
 		except ValueError:
 			pass
 		#time.sleep(1.5)
+		input(f"Press Enter.")
 
 
 if __name__ == "__main__":
