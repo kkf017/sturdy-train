@@ -18,7 +18,15 @@ from sentence_transformers import SentenceTransformer
 
 
 nlp = spacy.load("it_core_news_sm")
-embedder = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+
+#os.environ["HF_HUB_ETAG_TIMEOUT"] = "30"     # metadata check timeout
+#os.environ["HF_HUB_DOWNLOAD_TIMEOUT"] = "60" # actual file download timeout
+
+#huggingface-cli download sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 \
+#    --local-dir ./models/paraphrase-multilingual-MiniLM-L12-v2 \
+#    --resume-download
+#embedder = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+embedder = SentenceTransformer("./models/paraphrase-multilingual-MiniLM-L12-v2")
 
 
 QUERY = (
