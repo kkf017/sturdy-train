@@ -1,0 +1,77 @@
+[
+  {
+    "turbine_model": "Gamesa G90",
+    "manufacturer": "Gamesa",
+    "number_of_turbines": 22,
+    "rated_power_MW": 2,
+    "hub_height_m": null,
+    "rotor_diameter_m": null,
+    "blade_length_m": null,
+    "total_tip_height_m": null
+  },
+  {
+    "turbine_model": "Gamesa G87",
+    "manufacturer": "Gamesa",
+    "number_of_turbines": 8,
+    "rated_power_MW": 2,
+    "hub_height_m": null,
+    "rotor_diameter_m": null,
+    "blade_length_m": null,
+    "total_tip_height_m": null
+  },
+  {
+    "turbine_model": "Gamesa G90",
+    "manufacturer": null,
+    "number_of_turbines": 30,
+    "rated_power_MW": 2,
+    "hub_height_m": null,
+    "rotor_diameter_m": null,
+    "blade_length_m": null,
+    "total_tip_height_m": null,
+    "source_page_range": "13-15,19-21,21-23"
+  },
+  {
+    "turbine_model": "Gamesa G87",
+    "manufacturer": null,
+    "number_of_turbines": 8,
+    "rated_power_MW": 2,
+    "hub_height_m": null,
+    "rotor_diameter_m": null,
+    "blade_length_m": null,
+    "total_tip_height_m": null,
+    "source_page_range": "19-21"
+  },
+  {
+    "turbine_model": "Gamesa G90",
+    "manufacturer": "Gamesa",
+    "number_of_turbines": 14,
+    "rated_power_MW": 6.4,
+    "hub_height_m": 125,
+    "rotor_diameter_m": 170,
+    "blade_length_m": 83.5,
+    "total_tip_height_m": null,
+    "source_page_range": "18-19"
+  },
+  {
+    "turbine_model": "Gamesa G87",
+    "manufacturer": "Gamesa",
+    "number_of_turbines": 8,
+    "rated_power_MW": 2,
+    "hub_height_m": null,
+    "rotor_diameter_m": null,
+    "blade_length_m": null,
+    "total_tip_height_m": null,
+    "source_page_range": "19-21"
+  },
+  {
+    "turbine_model": "Gamesa G90",
+    "manufacturer": "Gamesa",
+    "number_of_turbines": 30,
+    "rated_power_MW": 60.0,
+    "hub_height_m": null,
+    "rotor_diameter_m": null,
+    "blade_length_m": null,
+    "total_tip_height_m": null,
+    "source_page_range": "21-23"
+  }
+]
